@@ -121,7 +121,7 @@ class VendorController extends Controller
             $query->where('id', $vendor->id);
         })
         ->with('customer')
-         
+
         ->where(function($query)use($vendor){
             if(config('order_confirmation_model') == 'restaurant' || $vendor->restaurants[0]->self_delivery_system)
             {
@@ -144,7 +144,7 @@ class VendorController extends Controller
         $orders= Helpers::order_data_formatting($orders, true);
         return response()->json($orders, 200);
     }
-    
+
     public function get_completed_orders(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -270,9 +270,9 @@ class VendorController extends Controller
             {
                 $ol = OrderLogic::create_transaction($order,'admin', null);
             }
-            
+
             $order->payment_status = 'paid';
-        } 
+        }
 
         if($request->status == 'delivered')
         {
@@ -292,7 +292,7 @@ class VendorController extends Controller
                 $dm = $order->delivery_man;
                 $dm->current_orders = $dm->current_orders>1?$dm->current_orders-1:0;
                 $dm->save();
-            }                   
+            }
         }
 
         $order->order_status = $request['status'];
@@ -368,7 +368,7 @@ class VendorController extends Controller
         $notifications->append('data');
 
         $user_notifications = UserNotification::where('vendor_id', $vendor->id)->where('created_at', '>=', \Carbon\Carbon::today()->subDays(7))->get();
-        
+
         $notifications =  $notifications->merge($user_notifications);
 
         try {
@@ -412,7 +412,7 @@ class VendorController extends Controller
         return response()->json($data, 200);
     }
 
-    public function remove_restaurant(Request $request)
+    public function remove_restaurant(Request $request) //aquiatr cuenta
     {
         $validator = Validator::make($request->all(), [
             'campaign_id' => 'required'
@@ -470,7 +470,7 @@ class VendorController extends Controller
             'limit' => $limit,
             'offset' => $offset,
             'products' => Helpers::product_data_formatting($paginator->items(), true, true, app()->getLocale())
-        ];   
+        ];
 
         return response()->json($data, 200);
     }
@@ -594,5 +594,5 @@ class VendorController extends Controller
         $vendor->delete();
         return response()->json([]);
     }
-  
+
 }

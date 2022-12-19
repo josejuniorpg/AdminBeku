@@ -250,7 +250,7 @@ class CustomerController extends Controller
         $interest = $request->user()->interest;
         $interest = isset($interest) ? json_decode($interest):null;
         // return response()->json($interest, 200);
-        
+
         $products =  Food::active()->whereHas('restaurant', function($q)use($zone_id){
             $q->where('zone_id', $zone_id);
         })
@@ -293,5 +293,5 @@ class CustomerController extends Controller
         }
         $user->delete();
         return response()->json([]);
-    }
+    }//quitar cuenta
 }

@@ -70,12 +70,12 @@ Route::group(['namespace' => 'Api\V1', 'middleware'=>'localization'], function (
             Route::put('update-payment-status', 'DeliverymanController@order_payment_status_update');
             Route::get('order-details', 'DeliverymanController@get_order_details');
             Route::put('update-fcm-token', 'DeliverymanController@update_fcm_token');
-            
-            //Remove account
+
+            //Remove account-delivery
             Route::delete('remove-account', 'DeliverymanController@remove_account');
         });
     });
-    
+
     Route::group(['prefix' => 'vendor', 'namespace' => 'Vendor', 'middleware'=>['vendor.api']], function () {
         Route::get('notifications', 'VendorController@get_notifications');
         Route::get('profile', 'VendorController@get_profile');
@@ -95,10 +95,10 @@ Route::group(['namespace' => 'Api\V1', 'middleware'=>'localization'], function (
         Route::get('get-products-list', 'VendorController@get_products');
         Route::put('update-bank-info', 'VendorController@update_bank_info');
         Route::post('request-withdraw', 'VendorController@request_withdraw');
-        
-        //remove acount
+
+        //remove acount-restaurante
         Route::delete('remove-account', 'VendorController@remove_account');
-        
+
         // Business setup
         Route::put('update-business-setup', 'BusinessSettingsController@update_restaurant_setup');
 
@@ -197,8 +197,8 @@ Route::group(['namespace' => 'Api\V1', 'middleware'=>'localization'], function (
         Route::post('update-interest', 'CustomerController@update_interest');
         Route::put('cm-firebase-token', 'CustomerController@update_cm_firebase_token');
         Route::get('suggested-foods', 'CustomerController@get_suggested_food');
-        
-        //remover acount
+
+        //remover acount-customer
         Route::delete('remove-account', 'CustomerController@remove_account');
 
         Route::group(['prefix' => 'address'], function () {
