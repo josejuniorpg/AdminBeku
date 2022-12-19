@@ -568,7 +568,7 @@ body {
     text-align: center;
     vertical-align: middle;
     padding-right: 1.3rem;
-    background-color: #1d2055;
+    background-color: #1d2055;/*Aqui cambie el fondo*/
     padding: 5px 5px 5px 5px;
   }
   .web-browse > div {

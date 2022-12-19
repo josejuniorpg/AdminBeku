@@ -62,7 +62,7 @@
 <body>
     @php($landing_page_text = \App\Models\BusinessSetting::where(['key'=>'landing_page_text'])->first())
     @php($landing_page_text = isset($landing_page_text->value)?json_decode($landing_page_text->value, true):null)
-    
+
     @php($landing_page_links = \App\Models\BusinessSetting::where(['key'=>'landing_page_links'])->first())
     @php($landing_page_links = isset($landing_page_links->value)?json_decode($landing_page_links->value, true):null)
 <header>
@@ -90,7 +90,7 @@
                         <li class="nav-item">
                             <a class="nav-link navbar-font" href="{{$landing_page_links['web_app_url']}}">{{__('messages.browse_web')}}</a>
                         </li>
-                        -->
+                        --->
                         <li class="nav-item">
                             <a class="nav-link navbar-font" href="{{route('terms-and-conditions')}}">{{__('messages.terms_and_condition')}}</a>
                         </li>
