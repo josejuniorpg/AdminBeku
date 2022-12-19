@@ -30,16 +30,16 @@
                     <div class="row">
                         <div class="col-md-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1"> {{__('messages.name')}}</label>
+                                <label class="input-label" for="exampleFormControlInput1"> {{__('messages.name')}}</label><!--Aqui-->
                                 <input type="text" name="f_name" class="form-control" placeholder=" {{__('messages.name')}}"
-                                       required value="{{old('f_name')}}">
+                                       required value="{{old('f_name')}}"> <!--Aqui-->
                             </div>
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.last')}}</label>
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.last')}}</label> <!--Aqui-->
                                 <input type="text" name="l_name" class="form-control" placeholder="{{__('messages.last')}}" value="{{old('l_name')}}"
-                                       required>
+                                       required> <!--Aqui-->
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                                 <label class="input-label" for="exampleFormControlInput1">{{__('messages.deliveryman')}} {{__('messages.type')}}</label>
                                 <select name="earning" class="form-control">
                                     <option value="1">{{__('messages.freelancer')}}</option>
-                                    <!--<option value="0">{{__('messages.salary_based')}}</option>-->
+                                    <!--<option value="0">{{__('messages.salary_based')}}</option>--> <!--Oculete la version de salario-->
                                 </select>
                             </div>
                         </div>
@@ -85,10 +85,10 @@
                     <div class="row">
                         <div class="col-md-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.type')}} {{__('messages.identity')}} </label>
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.type')}} {{__('messages.identity')}} </label><!--Aqui-->
                                 <select name="identity_type" class="form-control">
                                     <option value="passport">{{__('messages.passport')}}</option>
-                                    <option value="driving_license">{{__('messages.license')}} {{__('messages.driving')}} </option>
+                                    <option value="driving_license">{{__('messages.license')}} {{__('messages.driving')}} </option> <!--Aqui-->
                                     <option value="nid">{{__('messages.nid')}}</option>
                                     <option value="restaurant_id">{{__('messages.restaurant')}} {{__('messages.id')}}</option>
                                 </select>
@@ -96,7 +96,7 @@
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.number')}} {{__('messages.identity')}} </label>
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.number')}} {{__('messages.identity')}} </label><!--Aqui-->
                                 <input type="text" name="identity_number" class="form-control" value="{{old('identity_number')}}"
                                        placeholder="Ex : DH-23434-LS"
                                        required>
@@ -104,7 +104,7 @@
                         </div>
                         <div class="col-md-12 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.image')}} {{__('messages.identity')}} </label>
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.image')}} {{__('messages.identity')}} </label><!--Aqui-->
                                 <div>
                                     <div class="row" id="coba"></div>
                                 </div>
@@ -139,7 +139,7 @@
                                         accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" required>
                                     <label class="custom-file-label" for="customFileEg1">{{__('messages.choose')}} {{__('messages.file')}}</label>
                                 </div>
-                                
+
                                 <center class="pt-4">
                                     <img style="height: 200px;border: 1px solid; border-radius: 10px;" id="viewer"
                                         src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" alt="delivery-man image"/>
@@ -206,7 +206,7 @@
         //     $(this).val(phone.getNumber());
         // })
 
-        
+
     </script>
 
     <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>

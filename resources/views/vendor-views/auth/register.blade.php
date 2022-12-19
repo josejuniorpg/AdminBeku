@@ -39,15 +39,15 @@
                         <div class="col-md-6 col-12">
                             <div class="form-group">
                                 <label class="input-label" for="name">{{__('messages.restaurant')}} {{__('messages.name')}}</label>
-                                <input type="text" name="name" class="form-control" placeholder=" {{__('messages.name')}}" value="{{old('name')}}" required>
+                                <input type="text" name="name" class="form-control" placeholder=" {{__('messages.name')}}" value="{{old('name')}}" required> <!--Aqui-->
                             </div>
                             <div class="form-group">
                                 <label class="input-label" for="address">{{__('messages.restaurant')}} {{__('messages.address')}}</label>
                                 <textarea type="text" name="address" class="form-control" placeholder="{{__('messages.restaurant')}} {{__('messages.address')}}" required >{{old('address')}}</textarea>
                             </div>
-                            <div class="form-group" style="display: none">
+                            <div class="form-group" style="display: none"> <!--Origonalemente no va el display-->
                                 <label class="input-label" for="tax">{{__('messages.vat/tax')}} (%)</label>
-                                <input type="number" name="tax" class="form-control" placeholder="{{__('messages.vat/tax')}}" min="0" step=".01" required value="0">
+                                <input type="number" name="tax" class="form-control" placeholder="{{__('messages.vat/tax')}}" min="0" step=".01" required value="0"> <!--{{old('tax')}}-->
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-6 pr-md-1 px-0">
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-12" style="margin-top: auto;margin-bottom: auto;">
-                            <div class="form-group" style="margin-bottom:0%;">                       
+                            <div class="form-group" style="margin-bottom:0%;">
                                 <center>
                                     <img style="height: 200px;border: 1px solid; border-radius: 10px;" id="viewer"
                                         src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" alt="delivery-man image"/>
@@ -107,7 +107,7 @@
                             <div class="form-group">
                                 <label class="input-label" for="longitude">{{__('messages.longitude')}}<span
                                         class="input-label-secondary" title="{{__('messages.restaurant_lat_lng_warning')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{__('messages.restaurant_lat_lng_warning')}}"></span></label>
-                                <input type="text" 
+                                <input type="text"
                                        name="longitude" class="form-control"
                                        placeholder="Ex : 103.344322" id="longitude" value="{{old('longitude')}}" required readonly>
                             </div>
@@ -120,36 +120,36 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group">
-                                <label for="name">{{__('messages.upload')}} {{__('messages.cover')}}  <span class="text-danger">({{__('messages.ratio')}} 2:1)</span></label>
+                                <label for="name">{{__('messages.upload')}} {{__('messages.cover')}}  <span class="text-danger">({{__('messages.ratio')}} 2:1)</span></label> <!--Aqui-->
                                 <div class="custom-file">
                                     <input type="file" name="cover_photo" id="coverImageUpload" class="custom-file-input"
                                         accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*">
                                     <label class="custom-file-label" for="customFileUpload">{{__('messages.choose')}} {{__('messages.file')}}</label>
                                 </div>
-                            </div> 
+                            </div>
                             <center>
                                 <img style="max-width: 100%;border: 1px solid; border-radius: 10px; max-height:200px;" id="coverImageViewer"
                                 src="{{asset('public/assets/admin/img/900x400/img1.jpg')}}" alt="Product thumbnail"/>
                             </center>
                         </div>
                     </div>
-                      
+
                     <br>
                     <small class="nav-subtitle text-secondary border-bottom">{{__('messages.owner')}} {{__('messages.info')}}</small>
                     <br>
                     <div class="row">
                         <div class="col-md-4 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="f_name"> {{__('messages.name')}}</label>
-                                <input type="text" name="f_name" class="form-control" placeholder=" {{__('messages.name')}}"
-                                     value="{{old('f_name')}}"  required>
+                                <label class="input-label" for="f_name">{{__('messages.first')}} {{__('messages.name')}}</label> <!--Aqui-->
+                                <input type="text" name="f_name" class="form-control" placeholder="{{__('messages.first')}} {{__('messages.name')}}"
+                                     value="{{old('f_name')}}"  required> <!--Aqui-->
                             </div>
                         </div>
                         <div class="col-md-4 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="l_name"> {{__('messages.last')}}</label>
-                                <input type="text" name="l_name" class="form-control" placeholder=" {{__('messages.last')}}"
-                                value="{{old('l_name')}}"  required>
+                                <label class="input-label" for="l_name">{{__('messages.last')}} {{__('messages.name')}}</label><!--Aqui-->
+                                <input type="text" name="l_name" class="form-control" placeholder="{{__('messages.last')}} {{__('messages.name')}}"
+                                value="{{old('l_name')}}"  required> <!--Aqui-->
                             </div>
                         </div>
                         <div class="col-md-4 col-12">
@@ -161,7 +161,7 @@
                         </div>
                     </div>
                     <br>
-                    
+
                     <small class="nav-subtitle text-secondary border-bottom text-capitalize">{{__('messages.login')}} {{__('messages.info')}}</small>
                     <br>
                     <div class="row">
@@ -186,7 +186,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <button type="submit" class="btn btn-primary">{{__('messages.submit')}}</button>
                 </form>
             </div>
@@ -282,7 +282,7 @@
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key={{\App\Models\BusinessSetting::where('key', 'map_api_key')->first()->value}}&v=3.45.8"></script>
-    <script> 
+    <script>
         @php($default_location=\App\Models\BusinessSetting::where('key','default_location')->first())
         @php($default_location=$default_location->value?json_decode($default_location->value, true):0)
         let myLatlng = { lat: {{$default_location?$default_location['lat']:'23.757989'}}, lng: {{$default_location?$default_location['lng']:'90.360587'}} };
@@ -296,7 +296,7 @@
                 position: myLatlng,
             });
         var bounds = new google.maps.LatLngBounds();
-        function initMap() {           
+        function initMap() {
             // Create the initial InfoWindow.
             infoWindow.open(map);
              //get current location block
@@ -373,7 +373,7 @@
                         document.getElementById('latitude').value = coordinates['lat'];
                         document.getElementById('longitude').value = coordinates['lng'];
                         infoWindow.open(map);
-                    });    
+                    });
                 },
             });
         });
