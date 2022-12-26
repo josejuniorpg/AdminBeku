@@ -37,8 +37,8 @@
                     <div class="row">
                         <div class="col-md-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="name">{{__('messages.restaurant')}} {{__('messages.name')}}</label>
-                                <input type="text" name="name" class="form-control" placeholder="{{__('messages.first')}} {{__('messages.name')}}" value="{{old('name')}}" required>
+                                <label class="input-label" for="name">{{__('messages.restaurant')}}</label>
+                                <input type="text" name="name" class="form-control" placeholder="{{__('messages.name')}}" value="{{old('name')}}" required>
                             </div>
                             <div class="form-group">
                                 <label class="input-label" for="address">{{__('messages.restaurant')}} {{__('messages.address')}}</label>
@@ -134,15 +134,15 @@
                     <div class="row">
                         <div class="col-md-4 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="f_name">{{__('messages.first')}} {{__('messages.name')}}</label>
-                                <input type="text" name="f_name" class="form-control" placeholder="{{__('messages.first')}} {{__('messages.name')}}"
+                                <label class="input-label" for="f_name">{{__('messages.name')}}</label>
+                                <input type="text" name="f_name" class="form-control" placeholder="{{__('messages.name')}}"
                                      value="{{old('f_name')}}"  required>
                             </div>
                         </div>
                         <div class="col-md-4 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="l_name">{{__('messages.last')}} {{__('messages.name')}}</label>
-                                <input type="text" name="l_name" class="form-control" placeholder="{{__('messages.last')}} {{__('messages.name')}}"
+                                <label class="input-label" for="l_name">{{__('messages.last')}}</label>
+                                <input type="text" name="l_name" class="form-control" placeholder="{{__('messages.last')}}"
                                 value="{{old('l_name')}}"  required>
                             </div>
                         </div>

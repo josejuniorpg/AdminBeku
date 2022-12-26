@@ -29,15 +29,15 @@
                     <div class="row">
                         <div class="col-md-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.first')}} {{__('messages.name')}}</label>
-                                <input type="text" name="f_name" class="form-control" placeholder="{{__('messages.first')}} {{__('messages.name')}}"
+                                <label class="input-label" for="exampleFormControlInput1"> {{__('messages.name')}}</label>
+                                <input type="text" name="f_name" class="form-control" placeholder="{{__('messages.name')}}"
                                        required>
                             </div>
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.last')}} {{__('messages.name')}}</label>
-                                <input type="text" name="l_name" class="form-control" placeholder="{{__('messages.last')}} {{__('messages.name')}}"
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.last')}} </label>
+                                <input type="text" name="l_name" class="form-control" placeholder="{{__('messages.last')}}"
                                        required>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                     <div class="row">
                         <div class="col-md-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.identity')}} {{__('messages.type')}}</label>
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.type')}}</label>
                                 <select name="identity_type" class="form-control">
                                     <option value="passport">{{__('messages.passport')}}</option>
                                     <option value="driving_license">{{__('messages.driving')}} {{__('messages.license')}}</option>
@@ -95,7 +95,7 @@
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.identity')}} {{__('messages.number')}}</label>
+                                <label class="input-label" for="exampleFormControlInput1"> {{__('messages.number')}}</label>
                                 <input type="text" name="identity_number" class="form-control"
                                        placeholder="Ex : DH-23434-LS"
                                        required>

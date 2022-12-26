@@ -42,7 +42,7 @@
                                 </div>
                                 <input type="hidden" name="lang[]" value="{{$lang}}">
                                 <div class="form-group pt-4">
-                                    <label class="input-label" for="exampleFormControlInput1">{{__('messages.short')}} {{__('messages.description')}} ({{strtoupper($lang)}})</label>
+                                    <label class="input-label" for="exampleFormControlInput1">{{__('messages.description')}} ({{strtoupper($lang)}})</label>
                                     <textarea type="text" name="description[]" class="form-control ckeditor"></textarea>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                         </div>
                         <input type="hidden" name="lang[]" value="en">
                         <div class="form-group pt-4">
-                            <label class="input-label" for="exampleFormControlInput1">{{__('messages.short')}} {{__('messages.description')}}</label>
+                            <label class="input-label" for="exampleFormControlInput1"> {{__('messages.description')}}</label>
                             <textarea type="text" name="description[]" class="form-control ckeditor"></textarea>
                         </div>
                     </div>

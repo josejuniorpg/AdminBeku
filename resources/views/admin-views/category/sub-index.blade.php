@@ -13,7 +13,7 @@
             <div class="row align-items-center">
                 <div class="col-sm mb-2 mb-sm-0">
                     <h1 class="page-header-title"><i
-                            class="tio-add-circle-outlined"></i> {{__('messages.add')}} {{__('messages.new')}} {{__('messages.sub_category')}}
+                            class="tio-add-circle-outlined"></i> {{__('messages.add')}} {{__('messages.sub_category')}}
                     </h1>
                 </div>
             </div>
@@ -21,7 +21,7 @@
         <!-- End Page Header -->
         <div class="card">
             <div class="card-header">
-                <h5>{{isset($category)?__('messages.update'):__('messages.add').' '.__('messages.new')}} {{__('messages.sub_category')}}</h5>
+                <h5>{{isset($category)?__('messages.update'):__('messages.add').' '.__('')}} {{__('messages.sub_category')}}</h5>
             </div>
             <div class="card-body">
                 <form action="{{isset($category)?route('admin.category.update',[$category['id']]):route('admin.category.store')}}" method="post">
@@ -54,7 +54,7 @@
                 @endif
                     <div class="form-group">
                         <label class="input-label"
-                            for="exampleFormControlSelect1">{{__('messages.main')}} {{__('messages.category')}}
+                            for="exampleFormControlSelect1">{{__('messages.category')}} {{__('messages.main')}}  
                             <span class="input-label-secondary">*</span></label>
                         <select id="exampleFormControlSelect1" name="parent_id" class="form-control js-select2-custom" required>
                             @foreach(\App\Models\Category::where(['position'=>0])->get() as $cat)

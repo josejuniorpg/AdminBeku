@@ -30,7 +30,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.first')}} {{__('messages.name')}}</label>
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.first')}}</label>
                                 <input type="text" value="{{$delivery_man['f_name']}}" name="f_name"
                                        class="form-control" placeholder="{{__('messages.first_name')}}"
                                        required>
@@ -38,7 +38,7 @@
                         </div>
                         <div class="col-sm-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.last')}} {{__('messages.name')}}</label>
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.last')}}</label>
                                 <input type="text" value="{{$delivery_man['l_name']}}" name="l_name"
                                        class="form-control" placeholder="{{__('messages.last_name')}}"
                                        required>
@@ -85,7 +85,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.identity')}} {{__('messages.type')}}</label>
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.type')}}</label>
                                 <select name="identity_type" class="form-control">
                                     <option
                                         value="passport" {{$delivery_man['identity_type']=='passport'?'selected':''}}>
@@ -106,7 +106,7 @@
                         </div>
                         <div class="col-sm-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.identity')}} {{__('messages.number')}}</label>
+                                <label class="input-label" for="exampleFormControlInput1"> {{__('messages.number')}}</label>
                                 <input type="text" name="identity_number" value="{{$delivery_man['identity_number']}}"
                                        class="form-control"
                                        placeholder="Ex : DH-23434-LS"

@@ -43,7 +43,7 @@
                                 </div>
                                 <input type="hidden" name="lang[]" value="{{$lang}}">
                                 <div class="form-group pt-4">
-                                    <label class="input-label" for="exampleFormControlInput1">{{__('messages.short')}} {{__('messages.description')}} ({{strtoupper($lang)}})</label>
+                                    <label class="input-label" for="exampleFormControlInput1">{{__('messages.description')}} ({{strtoupper($lang)}})</label>
                                     <textarea type="text" name="description[]" class="form-control ckeditor"></textarea>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@
                         </div>
                         <input type="hidden" name="lang[]" value="en">
                         <div class="form-group pt-4">
-                            <label class="input-label" for="exampleFormControlInput1">{{__('messages.short')}} {{__('messages.description')}}</label>
+                            <label class="input-label" for="exampleFormControlInput1"> {{__('messages.description')}}</label>
                             <textarea type="text" name="description[]" class="form-control ckeditor"></textarea>
                         </div>
                     </div>
@@ -187,14 +187,14 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.available')}} {{__('messages.time')}} {{__('messages.starts')}}</label>
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.time')}} de  {{__('messages.starts')}}</label>
                                 <input type="time" name="available_time_starts" class="form-control" id="available_time_starts"
                                        placeholder="Ex : 10:30 am" required>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.available')}} {{__('messages.time')}} {{__('messages.ends')}}</label>
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.time')}} de  {{__('messages.ends')}}</label>
                                 <input type="time" name="available_time_ends" class="form-control"  id="available_time_ends" placeholder="5:45 pm"
                                        required>
                             </div>

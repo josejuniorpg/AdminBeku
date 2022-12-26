@@ -21,7 +21,7 @@
     </div>
     <div class="card">
         <div class="card-header">
-            <h4 class="text-capitalize">{{__('messages.provide')}} {{__('messages.deliverymen')}} {{__('messages.earning')}}</h4>
+            <h4 class="text-capitalize">{{__('messages.deliverymen')}} {{__('messages.earning')}}</h4>
         </div>
         <div class="card-body">
             <form action="{{route('admin.provide-deliveryman-earnings.store')}}" method='post' id="add_transaction">

@@ -29,15 +29,15 @@
                     <div class="row">
                         <div class="col-md-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.first')}} {{__('messages.name')}}</label>
-                                <input type="text" name="f_name" class="form-control" placeholder="{{__('messages.first')}} {{__('messages.name')}}"
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.name')}}</label>
+                                <input type="text" name="f_name" class="form-control" placeholder="{{__('messages.name')}}"
                                        required>
                             </div>
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="form-group">
-                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.last')}} {{__('messages.name')}}</label>
-                                <input type="text" name="l_name" class="form-control" placeholder="{{__('messages.last')}} {{__('messages.name')}}"
+                                <label class="input-label" for="exampleFormControlInput1">{{__('messages.last')}}</label>
+                                <input type="text" name="l_name" class="form-control" placeholder="{{__('messages.last')}}"
                                        required>
                             </div>
                         </div>
