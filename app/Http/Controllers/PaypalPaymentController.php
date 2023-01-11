@@ -100,6 +100,7 @@ class PaypalPaymentController extends Controller
             }
 
         } catch (\Exception $ex) {
+            info($ex->getMessage());
             Toastr::error(trans('messages.your_currency_is_not_supported',['method'=>trans('messages.paypal')]));
             return back();
         }
